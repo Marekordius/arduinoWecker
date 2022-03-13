@@ -1,54 +1,107 @@
 int counter = 0;
 int timer = 1000;
-
 void setup() {
-  pinMode(2, OUTPUT);
+  pinMode(5, OUTPUT);
   pinMode(4, OUTPUT);
-  pinMode(6, OUTPUT);
-  pinMode(8, OUTPUT);
-  pinMode(10, OUTPUT);
-  pinMode(12, OUTPUT);
+  pinMode(3, OUTPUT);
+  pinMode(2, OUTPUT);
 }
 
 void loop() {
-  counter++;
+  counter++; 
 
-  if ((counter % 2) != 0){
-    digitalWrite(2, HIGH);
-  }else{
-    digitalWrite(2, LOW);
+  switch (counter){
+    case 0:
+      anzeigenNull();
+    break;
+    case 1;
+      anzeigenEins();
+    break;
+    case 2:
+      anzeigenZwei();
+    break;
+    case 3:
+      anzeigenDrei();
+    break;
+    case 4:
+      anzeigenVier();
+    break;
+    case 5:
+      anzeigenFuenf();
+    break;
+    case 6:
+      anzeigenSechs();
+    break;
+    case 7:
+      anzeigenSieben();
+    break;
+    case 8:
+      anzeigenAcht();
+    break;
+    case 9:
+      anzeigenNeun();
+    break;
   }
+}
 
-  if ((counter % 4) > 1){
-    digitalWrite(4, HIGH);
-  }else{
-    digitalWrite(4, LOW);
-  }
 
-  if ((counter % 8) > 3){
-    digitalWrite(6, HIGH);
-  }else{
-    digitalWrite(6, LOW);
-  }
-
-  if ((counter % 16) > 7){
-    digitalWrite(8, HIGH);
-  }else{
-    digitalWrite(8, LOW);
-  }
-
-  if ((counter % 32) > 15){
-    digitalWrite(10, HIGH);
-  }else{
-    digitalWrite(10, LOW);
-  }
-
-  if ((counter % 64) > 31){
-    digitalWrite(12, HIGH);
-  }else{
-    digitalWrite(12, LOW);
-  }
-
-  delay(timer);
-  
+void anzeigenNull(){
+  digitalWrite(2, LOW);
+  digitalWrite(3, LOW);
+  digitalWrite(4, LOW);
+  digitalWrite(5, LOW);
+}
+void anzeigenEins(){
+  digitalWrite(2, HIGH);
+  digitalWrite(3, LOW);
+  digitalWrite(4, LOW);
+  digitalWrite(5, LOW);
+}
+void anzeigenZwei(){
+  digitalWrite(2, LOW);
+  digitalWrite(3, HIGH);
+  digitalWrite(4, LOW);
+  digitalWrite(5, LOW);
+}
+void anzeigenDrei(){
+  digitalWrite(2, HIGH);
+  digitalWrite(3, HIGH);
+  digitalWrite(4, LOW);
+  digitalWrite(5, LOW);
+}
+void anzeigenVier(){
+  digitalWrite(2, LOW);
+  digitalWrite(3, LOW);
+  digitalWrite(4, HIGH);
+  digitalWrite(5, LOW);
+}
+void anzeigenFuenf(){
+  digitalWrite(2, HIGH);
+  digitalWrite(3, LOW);
+  digitalWrite(4, HIGH);
+  digitalWrite(5, LOW);
+}
+void anzeigenSechs(){
+  digitalWrite(2, LOW);
+  digitalWrite(3, HIGH);
+  digitalWrite(4, HIGH);
+  digitalWrite(5, LOW);
+}
+void anzeigenSieben(){
+  digitalWrite(2, HIGH);
+  digitalWrite(3, HIGH);
+  digitalWrite(4, HIGH);
+  digitalWrite(5, LOW);
+}
+void anzeigenAcht(){
+  digitalWrite(2, LOW);
+  digitalWrite(3, LOW);
+  digitalWrite(4, LOW);
+  digitalWrite(5, HIGH);
+}
+void anzeigenNeun(){
+  digitalWrite(2, HIGH);
+  digitalWrite(3, LOW);
+  digitalWrite(4, LOW);
+  digitalWrite(5, HIGH);
 }
