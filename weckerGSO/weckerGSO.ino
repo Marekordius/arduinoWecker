@@ -73,36 +73,41 @@ void loop() {
 
   switch (counter){
     case 0:
-      anzeigenNull();
-    break;
-    case 1:
-      anzeigenEins();
-    break;
+        anzeigenNull();
+      break;
+    case 1;
+        anzeigenEins();
+      break;
     case 2:
-      anzeigenZwei();
-    break;
+        anzeigenZwei();
+      break;
     case 3:
-      anzeigenDrei();
-    break;
+        anzeigenDrei();
+      break;
     case 4:
-      anzeigenVier();
-    break;
+        anzeigenVier();
+      break;
     case 5:
-      anzeigenFuenf();
-    break;
+        anzeigenFuenf();
+      break;
     case 6:
-      anzeigenSechs();
-    break;
+        anzeigenSechs();
+      break;
     case 7:
-      anzeigenSieben();
-    break;
+        anzeigenSieben();
+      break;
     case 8:
-      anzeigenAcht();
-    break;
+        anzeigenAcht();
+      break;
     case 9:
-      anzeigenNeun();
-    break;
+        anzeigenNeun();
+      break;
+    case 10:
+        counter = 0;
+      break;
   }
+  
+  delay(timer);
 }
 
 
