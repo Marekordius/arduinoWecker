@@ -7,44 +7,6 @@ void setup() {
   pinMode(2, OUTPUT);
 }
 
-void loop() {
-  counter++; 
-
-  switch (counter){
-    case 0:
-      anzeigenNull();
-    break;
-    case 1;
-      anzeigenEins();
-    break;
-    case 2:
-      anzeigenZwei();
-    break;
-    case 3:
-      anzeigenDrei();
-    break;
-    case 4:
-      anzeigenVier();
-    break;
-    case 5:
-      anzeigenFuenf();
-    break;
-    case 6:
-      anzeigenSechs();
-    break;
-    case 7:
-      anzeigenSieben();
-    break;
-    case 8:
-      anzeigenAcht();
-    break;
-    case 9:
-      anzeigenNeun();
-    break;
-  }
-}
-
-
 void anzeigenNull(){
   digitalWrite(2, LOW);
   digitalWrite(3, LOW);
@@ -105,3 +67,43 @@ void anzeigenNeun(){
   digitalWrite(4, LOW);
   digitalWrite(5, HIGH);
 }
+
+void loop() {
+  counter++; 
+
+  switch (counter){
+    case 0:
+      anzeigenNull();
+    break;
+    case 1:
+      anzeigenEins();
+    break;
+    case 2:
+      anzeigenZwei();
+    break;
+    case 3:
+      anzeigenDrei();
+    break;
+    case 4:
+      anzeigenVier();
+    break;
+    case 5:
+      anzeigenFuenf();
+    break;
+    case 6:
+      anzeigenSechs();
+    break;
+    case 7:
+      anzeigenSieben();
+    break;
+    case 8:
+      anzeigenAcht();
+    break;
+    case 9:
+      anzeigenNeun();
+    break;
+  }
+}
+
+
+
