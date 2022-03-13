@@ -1,10 +1,14 @@
-int counter = 0;
-int timer = 1000;
+int counter;
+int timer;
+
 void setup() {
   pinMode(5, OUTPUT);
   pinMode(4, OUTPUT);
   pinMode(3, OUTPUT);
   pinMode(2, OUTPUT);
+
+  counter = 0;
+  timer = 1000;
 }
 
 void anzeigenNull(){
@@ -69,7 +73,6 @@ void anzeigenNeun(){
 }
 
 void loop() {
-  counter++; 
 
   switch (counter){
     case 0:
@@ -108,6 +111,7 @@ void loop() {
   }
   
   delay(timer);
+  counter++; 
 }
 
 
