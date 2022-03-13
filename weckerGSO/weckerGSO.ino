@@ -14,10 +14,10 @@ void anzeigenNull(){
   digitalWrite(5, LOW);
 }
 void anzeigenEins(){
-  digitalWrite(2, HIGH);
-  digitalWrite(3, LOW);
-  digitalWrite(4, LOW);
-  digitalWrite(5, LOW);
+  char stat[] = {HIGH, LOW, LOW, LOW};
+  for(int i = 2; i <= 5; i++ ){
+    digitalWrite(i, stat[i-2]);
+  }
 }
 void anzeigenZwei(){
   digitalWrite(2, LOW);
@@ -75,7 +75,7 @@ void loop() {
     case 0:
         anzeigenNull();
       break;
-    case 1;
+    case 1:
         anzeigenEins();
       break;
     case 2:
