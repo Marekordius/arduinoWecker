@@ -74,53 +74,44 @@ void anzeigenNeun(){
 
 void loop() {
   
-  if(coutner == 10){
+  if(counter == 10){
     counter = 0;
   }
   
   switch (counter){
     case 0:
         anzeigenNull();
-        delay(timer);
       break;
     case 1:
         anzeigenEins();
-        delay(timer);
       break;
     case 2:
         anzeigenZwei();
-        delay(timer);
       break;
     case 3:
         anzeigenDrei();
-        delay(timer);
       break;
     case 4:
         anzeigenVier();
-        delay(timer);
       break;
     case 5:
         anzeigenFuenf();
-        delay(timer);
       break;
     case 6:
         anzeigenSechs();
-        delay(timer);
       break;
     case 7:
         anzeigenSieben();
-        delay(timer);
       break;
     case 8:
         anzeigenAcht();
-        delay(timer);
       break;
     case 9:
         anzeigenNeun();
-        delay(timer);
       break;
   }
-  
+
+  delay(timer);
   counter++; 
 }
 
