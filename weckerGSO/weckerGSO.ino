@@ -1,4 +1,4 @@
-int counter;
+int counter = 1;
 int timer;
 
 void setup() {
@@ -75,37 +75,37 @@ void anzeigenNeun(){
 void loop() {
 
   switch (counter){
-    case 0:
+    case 1:
         anzeigenNull();
       break;
-    case 1:
+    case 2:
         anzeigenEins();
       break;
-    case 2:
+    case 3:
         anzeigenZwei();
       break;
-    case 3:
+    case 4:
         anzeigenDrei();
       break;
-    case 4:
+    case 5:
         anzeigenVier();
       break;
-    case 5:
+    case 6:
         anzeigenFuenf();
       break;
-    case 6:
+    case 7:
         anzeigenSechs();
       break;
-    case 7:
+    case 8:
         anzeigenSieben();
       break;
-    case 8:
+    case 9:
         anzeigenAcht();
       break;
-    case 9:
+    case 10:
         anzeigenNeun();
       break;
-    case 10:
+    case 11:
         counter = 0;
       break;
   }
